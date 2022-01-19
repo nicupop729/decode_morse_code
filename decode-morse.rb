@@ -25,4 +25,4 @@ def decode_sentence(sentence_code)
   sentence_result
 end
 
-print decode_sentence('-- -.--   -. .- -- .')
+print decode_sentence('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ...')
