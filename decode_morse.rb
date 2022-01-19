@@ -1,13 +1,13 @@
+# frozen_string_literal: true
+
 def decode_char(char_code)
   morse_code = { '.-' => 'A', '-...' => 'B', '-.-.' => 'C', '-..' => 'D', '.' => 'E',
-  '..-.' => 'F', '--.' => 'G', '....' => 'H', '..' => 'I', '.---' => 'J', '-.-' => 'K', '.-..' => 'L',
-  '--' => 'M', '-.' => 'N', '---' => 'O', '.--.' => 'P', '--.-' => 'Q', '.-.' => 'R', '...' => 'S',
-  '-' => 'T', '..-' => 'U', '...-' => 'V', '.--' => 'W', '-..-' => 'X', '-.--' => 'Y',
-  '--..' => 'Z', '|' => ' ', '/' => ' ' }
+                 '..-.' => 'F', '--.' => 'G', '....' => 'H', '..' => 'I', '.---' => 'J', '-.-' => 'K', '.-..' => 'L',
+                 '--' => 'M', '-.' => 'N', '---' => 'O', '.--.' => 'P', '--.-' => 'Q', '.-.' => 'R', '...' => 'S',
+                 '-' => 'T', '..-' => 'U', '...-' => 'V', '.--' => 'W', '-..-' => 'X', '-.--' => 'Y',
+                 '--..' => 'Z', '|' => ' ', '/' => ' ' }
   morse_code[char_code]
 end
-
-# print decode_char('--.')
 
 def decode_word(word_code)
   word_code = word_code.split
@@ -17,8 +17,6 @@ def decode_word(word_code)
   end
   word_result
 end
-
-# print decode_word("-- -.--")
 
 def decode_sentence(sentence_code)
   sentence_code = sentence_code.split('   ')
