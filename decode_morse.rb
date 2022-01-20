@@ -26,4 +26,4 @@ def decode_sentence(sentence_code)
 end
 
 print decode_sentence('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ...')
->>>>>>> 4112b75 (Fix: Linter errors)
+
