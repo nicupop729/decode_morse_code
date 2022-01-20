@@ -26,4 +26,3 @@ def decode_sentence(sentence_code)
 end
 
 print decode_sentence('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ...')
-
