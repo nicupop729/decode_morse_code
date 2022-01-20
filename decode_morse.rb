@@ -18,11 +18,12 @@ end
 
 def decode_sentence(sentence_code)
   sentence_code = sentence_code.split('   ')
-  sentence_decoded = ''
+  sentence_result = ''
   sentence_code.each do |word|
-    sentence_decoded += "#{decode_word(word)} "
+    sentence_result += "#{decode_word(word)} "
   end
-  sentence_decoded
+  sentence_result
 end
 
 print decode_sentence('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ...')
+>>>>>>> 4112b75 (Fix: Linter errors)
