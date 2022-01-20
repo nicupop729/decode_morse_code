@@ -18,11 +18,11 @@ end
 
 def decode_sentence(sentence_code)
   sentence_code = sentence_code.split('   ')
-  sentence_result = ''
+  sentence_decoded = ''
   sentence_code.each do |word|
-    sentence_result += "#{decode_word(word)} "
+    sentence_decoded += "#{decode_word(word)} "
   end
-  sentence_result
+  sentence_decoded
 end
 
 print decode_sentence('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ...')
